@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour {
 
 	Items database;
+	GameObject equipmentPanel;
 	GameObject inventoryPanel;
+	GameObject equipslotpanel;
 	GameObject slotPanel;
 	public GameObject inventorySlot;
 	public GameObject inventoryItem;
 	int slotAmount;
+	int equipAmount;
 
 	public List<Item> items = new List<Item>();
 	public List<GameObject> slots = new List<GameObject>();
+	public List<GameObject> Eslots = new List<GameObject> ();
 
 	void Start()
 	{
@@ -28,6 +32,17 @@ public class Inventory : MonoBehaviour {
 			items.Add (new Item ());
 			//Debug.Log ("Slot made!");
 		}
+		equipAmount = 3;
+		equipmentPanel = GameObject.Find ("Equipment Panel");
+		equipslotpanel = equipmentPanel.transform.FindChild ("Equipment Slots").gameObject;
+		for (int i = 0; i < equipAmount; i++) 
+		{
+			Eslots.Add (Instantiate (inventorySlot));
+			Eslots [i].transform.SetParent (equipslotpanel.transform);
+			items.Add (new Item ());
+			//Debug.Log ("Equipment slot made!");
+		}
+
 		//AddItem (2);
 		//AddItem (1);
 	}
@@ -41,6 +56,7 @@ public class Inventory : MonoBehaviour {
 			{
 				items [i] = itemToAdd;
 				GameObject itemObj = Instantiate (inventoryItem);
+				itemObj.GetComponent<ItemData> ().item = itemToAdd;
 				itemObj.transform.SetParent (slots [i].transform);
 				itemObj.transform.position = Vector2.zero;
 				itemObj.GetComponent<Image> ().sprite = itemToAdd.Sprite;
