@@ -44,16 +44,27 @@ public class Inventory : MonoBehaviour {
 		}
 
 		//AddItem (2);
-		//AddItem (1);
+		//AddItem (1); 
 	}
 
 	public void AddItem(int id)
 	{
 		Item itemToAdd = database.FetchItemByID (id);
-		for (int i = 0; i < items.Count; i++) 
-		{
-			if (items [i].ID == -1) 
+		if (CheckIfItemIsInInventory(itemToAdd))
 			{
+			for (int i =0; i< items.Count; i++)
+				{
+				if(items[i].ID == id)
+					{
+					ItemData data = slots[i].transform.GetChild(0).GetComponent<ItemData>();
+				}
+					
+			}
+		}
+		for (int i = 0; i < items.Count; i++) 
+			{
+			if (items [i].ID == -1) 
+				{
 				items [i] = itemToAdd;
 				GameObject itemObj = Instantiate (inventoryItem);
 				itemObj.GetComponent<ItemData> ().item = itemToAdd;
@@ -64,5 +75,13 @@ public class Inventory : MonoBehaviour {
 				break;
 			}
 		}
+	}
+
+	void CheckIfItemIsInInventory(Item item){
+		for (int i =0; i< items.Count; i++){
+			if(items[i].ID == item.ID)
+				return true;
+		}
+		return false;
 	}
 }
