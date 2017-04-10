@@ -21,12 +21,12 @@ public class MainMenu : MonoBehaviour {
 		exitText.enabled = false;
 	}
 
-/*	public void NoPress() { //If no button pressed, disapear
+	public void NoPress() { //If no button pressed, disapear
 		quitMenu.enabled = false;
 		startText.enabled = true;
 		exitText.enabled = true;
 	}
-*/
+
 	public void BeginGame() { //Play game BC enter scene
 		SceneManager.LoadScene (1);
 	}
