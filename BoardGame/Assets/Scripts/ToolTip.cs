@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class ToolTip : MonoBehaviour {
 
-	private Item item;
+	//private Item item;
 	private string data;
 	private GameObject toolTipBar;
 
 	public void Activate(Item item){
-		this.item = item;
+		//this.item = item;
 	}
 
 	public void TTActivate(){
-		this.item = item;
-		ConstructDataString ();
+		//this.item = item;
+		//ConstructDataString ();
 		toolTipBar.SetActive (true);
 	}
 
@@ -23,7 +23,7 @@ public class ToolTip : MonoBehaviour {
 	}
 
 	public void ConstructDataString(){
-		data = item.Title;
+		//data = item.Title;
 	}
 
 	// Use this for initialization

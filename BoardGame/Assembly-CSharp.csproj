@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BaseCharacters.cs" />
      <Compile Include="Assets\Scripts\BaseStat.cs" />
+     <Compile Include="Assets\Scripts\DontRemove.cs" />
      <Compile Include="Assets\Scripts\GUI.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\ItemData.cs" />
@@ -55,7 +57,8 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\Movement1.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\Stats.cs" />
+     <Compile Include="Assets\Scripts\SelectCharacter1.cs" />
+     <Compile Include="Assets\Scripts\StatHolder.cs" />
      <Compile Include="Assets\Scripts\ToolTip.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -76,7 +79,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>C:/Users/Simon/Desktop/Programming/CIS 35 (Spring 2017)/GameProject/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
+ <HintPath>E:/Files/Projects/CIS35/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

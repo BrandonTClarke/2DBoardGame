@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main MenuScene.unity
   - enabled: 1
+    path: Assets/Character Select.unity
+  - enabled: 1
     path: Assets/Board1.unity
   - enabled: 1
     path: Assets/2D Battle.unity

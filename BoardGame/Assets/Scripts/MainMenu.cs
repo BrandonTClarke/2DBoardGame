@@ -1,12 +1,14 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 	public Canvas quitMenu;
 	public Button startText;
 	public Button exitText;
+	public GameObject characterBoxes;
 
 	void start () {
 		quitMenu = quitMenu.GetComponent<Canvas> ();
@@ -28,7 +30,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void BeginGame() { //Play game BC enter scene
-		SceneManager.LoadScene ("Board1");
+		SceneManager.LoadScene ("Character Select");
 	}
 
 	public void ExitGame(){ 
