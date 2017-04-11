@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void BeginGame() { //Play game BC enter scene
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene ("Board1");
 	}
 
 	public void ExitGame(){ 

@@ -50,7 +50,7 @@ public class Inventory : MonoBehaviour {
 	public void AddItem(int id)
 	{
 		Item itemToAdd = database.FetchItemByID (id);
-		if (CheckIfItemIsInInventory(itemToAdd))
+		/* if (CheckIfItemIsInInventory(itemToAdd))
 			{
 			for (int i =0; i< items.Count; i++)
 				{
@@ -60,7 +60,7 @@ public class Inventory : MonoBehaviour {
 				}
 					
 			}
-		}
+		} */
 		for (int i = 0; i < items.Count; i++) 
 			{
 			if (items [i].ID == -1) 
@@ -76,7 +76,7 @@ public class Inventory : MonoBehaviour {
 			}
 		}
 	}
-
+	/*
 	void CheckIfItemIsInInventory(Item item){
 		for (int i =0; i< items.Count; i++){
 			if(items[i].ID == item.ID)
@@ -84,4 +84,5 @@ public class Inventory : MonoBehaviour {
 		}
 		return false;
 	}
+	*/
 }
