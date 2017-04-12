@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseCharacters : BaseStat {
 
-	public void WarriorClass (){
+/*	public void WarriorClass (){
 		CharacterClassName = "Warrior";
 		CharacterClassDescription = "High Defense brute who starts off with the best defense.";
 
@@ -35,5 +35,5 @@ public class BaseCharacters : BaseStat {
 		Attack = 3;
 		Defense = 2;
 		Speed = 4;
-	}
+	}  */
 }
