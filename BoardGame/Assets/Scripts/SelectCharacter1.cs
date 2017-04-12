@@ -16,17 +16,17 @@ public class SelectCharacter1 : MonoBehaviour {
 	}
 		
 	public void OnPressWarrior(){
-
+		//SetDefaultStatsForWarrior ();
 		SceneManager.LoadScene ("Board1");
 	}
 
 	public void OnPressArcher(){
-
+		//SetDefaultStatsForArcher ();
 		SceneManager.LoadScene ("Board1");
 	}
 
 	public void OnPressThief(){
-
+		//SetDefaultStatsForThief ();
 		SceneManager.LoadScene ("Board1");
 	}
 		
