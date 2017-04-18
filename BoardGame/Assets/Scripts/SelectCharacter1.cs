@@ -10,23 +10,45 @@ public class SelectCharacter1 : MonoBehaviour {
 	public Button button2;
 	public Button button3;
 
+	//private StatHolder Stats;
+
 	// Use this for initialization
 	void Start () {
-		
 	}
 		
-	public void OnPressWarrior(){
-		//SetDefaultStatsForWarrior ();
+	public void SetDefaultStatsForWarrior(){
+		StatHolder.CharacterClassName = "Warrior";
+		StatHolder.Dice = 3;
+		StatHolder.MaxHealth = 12;
+		StatHolder.CurrentHealth = 12;
+		StatHolder.Attack = 2;
+		StatHolder.Defense = 4;
+		StatHolder.Speed = 2;
+		StatHolder.Muns = 20;
 		SceneManager.LoadScene ("Board1");
 	}
 
-	public void OnPressArcher(){
-		//SetDefaultStatsForArcher ();
+	public void SetDefaultStatsForArcher(){
+		StatHolder.CharacterClassName = "Archer";
+		StatHolder.Dice = 3;
+		StatHolder.MaxHealth = 10;
+		StatHolder.CurrentHealth = 10;
+		StatHolder.Attack = 3;
+		StatHolder.Defense = 2;
+		StatHolder.Speed = 3;
+		StatHolder.Muns = 20;
 		SceneManager.LoadScene ("Board1");
 	}
 
-	public void OnPressThief(){
-		//SetDefaultStatsForThief ();
+	public void SetDefaultStatsForThief(){
+		StatHolder.CharacterClassName = "Thief";
+		StatHolder.Dice = 3;
+		StatHolder.MaxHealth = 8;
+		StatHolder.CurrentHealth = 8;
+		StatHolder.Attack = 4;
+		StatHolder.Defense = 2;
+		StatHolder.Speed = 3;
+		StatHolder.Muns = 20;
 		SceneManager.LoadScene ("Board1");
 	}
 		

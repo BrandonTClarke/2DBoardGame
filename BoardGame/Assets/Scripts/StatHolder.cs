@@ -3,95 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatHolder : MonoBehaviour {
+public class StatHolder {
 
-	public Button button1;
-	public Button button2;
-	public Button button3;
+	public static string CharacterClassName { get; set; }
+	//public string CharacterClassDescription { get; set; }
 
-	public string Type = "BLANK";
-	public int Dice = 0;
-	public int MaxHealth = 0;
-	public int CurrentHealth = 0;
-	public int Attack = 0;
-	public int Defense = 0;
-	public int Speed = 0;
-
-	public Text textStats;
-	public Text textType;
+	public static int CurrentHealth{ get; set; }
+	public static int MaxHealth { get; set; }
+	public static int Muns { get; set; }
+	//public int ExperiencePoints { get; set; }
+	//public int Level { get; set; } 
+	public static int Dice {get; set;}
+	public static int Attack {get; set;}
+	public static int Defense {get; set;}
+	public static int Speed {get; set;}
 
 	/*
-	public void InitStatsForCharacterType(CharacterType type){
-		switch (type) {
-		case CharacterType.Warrior :
-			SetDefaultStatsForWarrior ();
-			break;
-		case CharacterType.Archer :
-			SetDefaultStatsForArcher ();
-			break;
-		case CharacterType.Thief :
-			SetDefaultStatsForThief ();
-			break;
-		default:
-			break;
-		}
+	public static void Player1Stat(string characterClassName,int currenthp, int maxhp, int mun, int dice, int attack, int defense, int speed){
+		this.CharacterClassName = characterClassName;
+		this.CurrentHealth = currenthp;
+		this.MaxHealth = maxhp;
+		this.Muns = mun;
+		this.Dice = dice;
+		this.Attack = attack;
+		this.Defense = defense;
+		this.Speed = speed;
+	}
+	*/
+	/*
+	public void Stats () {
+		string CharacterClassName = "BLANK";
+		int CurrentHealth = 0;
+		int Dice = 0;
+		int Attack = 0;
+		int Defense = 0;
+		int Speed = 0;
+		int Muns = 0;
+		
 	}
 	*/
 
-	public void SetDefaultStatsForWarrior(){
-		Type = "Warrior";
-		Dice = 3;
-		MaxHealth = 12;
-		CurrentHealth = 12;
-		Attack = 2;
-		Defense = 4;
-		Speed = 2;
-		SceneManager.LoadScene ("Board1");
-		textStats = GameObject.Find ("Stats Box").GetComponent<Text> ();
-	}
-
-	public void SetDefaultStatsForArcher(){
-		Type = "Archer";
-		Dice = 3;
-		MaxHealth = 10;
-		CurrentHealth = 10;
-		Attack = 3;
-		Defense = 2;
-		Speed = 3;
-		SceneManager.LoadScene ("Board1");
-		textStats = GameObject.Find ("Stats Box").GetComponent<Text> ();
-	}
-
-	public void SetDefaultStatsForThief(){
-		Type = "Thief";
-		Dice = 3;
-		MaxHealth = 8;
-		CurrentHealth = 8;
-		Attack = 4;
-		Defense = 2;
-		Speed = 3;
-		SceneManager.LoadScene ("Board1");
-		textStats = GameObject.Find ("Stats Box").GetComponent<Text> ();
-	}
-
-
-	public void UpdateStatsUI(){
-
-		//textType = Type.ToString();
-		textStats.text = 
-			"Dice: " + Dice.ToString() +
-			"Attack: " + Attack.ToString() +
-			"Defense: " + Defense.ToString() +
-			"Speed: " + Speed.ToString();
-	}
-
-
-	// Use this for initialization
-	void Start () {
+	void Start(){
 		
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
+		
 	}
 }

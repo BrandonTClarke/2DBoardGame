@@ -313,7 +313,7 @@ Prefab:
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -238.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
@@ -394,7 +394,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789815336}
+      objectReference: {fileID: 259629835}
     - target: {fileID: 1746515535756088, guid: f6e71a7bfde5bdb4897238c01b3f10c5, type: 2}
       propertyPath: m_Name
       value: Button1
@@ -710,7 +710,7 @@ Prefab:
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -238.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
@@ -805,7 +805,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789815336}
+      objectReference: {fileID: 259629835}
     - target: {fileID: 114892275401082414, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1201,7 +1201,7 @@ Prefab:
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -238.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224434816422884104, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
@@ -1296,7 +1296,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1789815336}
+      objectReference: {fileID: 259629835}
     - target: {fileID: 114892275401082414, guid: f6e71a7bfde5bdb4897238c01b3f10c5,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -1450,7 +1450,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1789815335}
   - component: {fileID: 1789815334}
-  - component: {fileID: 1789815336}
   m_Layer: 0
   m_Name: Universal Scripts
   m_TagString: Untagged
@@ -1482,29 +1481,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1789815336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1789815333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8999cbb60defec241a96c8a8d89b964f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button1: {fileID: 337403880}
-  button2: {fileID: 580443206}
-  button3: {fileID: 1184654980}
-  Type: 424c414e4b
-  Dice: 0
-  MaxHealth: 0
-  CurrentHealth: 0
-  Attack: 0
-  Defense: 0
-  Speed: 0
-  textStats: {fileID: 0}
-  textType: {fileID: 0}
 --- !u!1 &1854195791
 GameObject:
   m_ObjectHideFlags: 0
