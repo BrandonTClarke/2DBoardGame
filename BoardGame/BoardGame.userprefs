@@ -1,15 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemAttributes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Movement1.cs">
     <Files>
-      <File FileName="Assets\Scripts\Inventory.cs" Line="63" Column="7" />
-      <File FileName="Assets\Scripts\ToolTip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Inventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SelectCharacter1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UpdateStats.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\StatHolder.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DontRemove.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ItemAttributes.cs" Line="5" Column="46" />
-      <File FileName="Assets\Scripts\Movement1.cs" Line="17" Column="37" />
+      <File FileName="Assets\Scripts\ItemAttributes.cs" Line="5" Column="42" />
+      <File FileName="Assets\Scripts\Movement1.cs" Line="37" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

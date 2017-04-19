@@ -67,11 +67,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f513eba6755ab4990caf1aacdaeced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 0
-  Muns: 0
+  MaxHealth: 1
+  Muns: 10
   Dice: 0
   Attack: 0
-  Defense: 0
+  Defense: 1
   Speed: 0
 --- !u!222 &222129411918690682
 CanvasRenderer:
