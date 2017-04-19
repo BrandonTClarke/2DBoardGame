@@ -5,26 +5,39 @@ class Movement1 : MonoBehaviour
 {
 
 	Vector3 pos;                                // For movement
-	float speed = 3.0f;                         // Speed of movement
+	float speed = 2.0f; 					 // Speed of movement
+	int moveNum = StatHolder.Dice;
 
 	void Start () {
-		pos = transform.position;          // Take the initial position
+		pos = transform.position; // Take the initial position
+		Debug.Log(moveNum);
 	}
 
 	void FixedUpdate () {
-		if(Input.GetAxisRaw("Horizontal") < 0 && transform.position == pos) {        // Left
-			pos += Vector3.left;
+		for (int i = 0; i < moveNum; i++){
+
+			if(Input.GetAxisRaw("Horizontal") < 0 && transform.position == pos) {        // Left
+				pos += Vector3.left;
+				Debug.Log(i);
+			}
+			if(Input.GetAxisRaw("Horizontal") > 0 && transform.position == pos) {        // Right
+				pos += Vector3.right;
+				Debug.Log(i);
+			}
+			if(Input.GetAxisRaw("Vertical") > 0 && transform.position == pos) {        // Up
+				pos += Vector3.up;
+				Debug.Log(i);
+			}
+			if(Input.GetAxisRaw("Vertical") < 0 && transform.position == pos) {        // Down
+				pos += Vector3.down;
+				Debug.Log(i);
+			}
+			transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * speed);    // Move there
 		}
-		if(Input.GetAxisRaw("Horizontal") > 0 && transform.position == pos) {        // Right
-			pos += Vector3.right;
-		}
-		if(Input.GetAxisRaw("Vertical") > 0 && transform.position == pos) {        // Up
-			pos += Vector3.up;
-		}
-		if(Input.GetAxisRaw("Vertical") < 0 && transform.position == pos) {        // Down
-			pos += Vector3.down;
-		}
-		transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * speed);    // Move there
+}
+
+	public void ResetDice(){
+		moveNum = StatHolder.Dice;
 	}
 
 	/* public float speed = 5.0f; // player speed

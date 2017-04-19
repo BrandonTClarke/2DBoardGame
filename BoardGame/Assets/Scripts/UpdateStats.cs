@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class UpdateStats : MonoBehaviour {
 
-	public Text textStats;
 	public Text textType;
+	public Text diceStats;
+	public Text attackStats;
+	public Text defenseStats;
+	public Text speedStats;
+	public Text hpStats;
 
 	// Use this for initialization
 	void Start () {
@@ -19,14 +23,11 @@ public class UpdateStats : MonoBehaviour {
 		
 	public void UpdateStatsUI(){
 		textType.text = StatHolder.CharacterClassName;
-		textStats.text = 
-			"Dice: " +
-			"" + StatHolder.Dice.ToString() +
-			"Attack: " +
-			"" + StatHolder.Attack.ToString() +
-			"Defense: " +
-			"" + StatHolder.Defense.ToString() +
-			"Speed: " +
-			"" + StatHolder.Speed.ToString();
+		hpStats.text = StatHolder.CurrentHealth.ToString () + " / " + StatHolder.MaxHealth.ToString ();
+		diceStats.text = "Dice: " + StatHolder.Dice.ToString ();
+		attackStats.text = "Attack: " + StatHolder.Attack.ToString ();
+		defenseStats.text = "Defense: " + StatHolder.Defense.ToString ();
+		speedStats.text = "Speed: " + StatHolder.Speed.ToString ();
+
 	}
 }
