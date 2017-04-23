@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9877E7BF-205A-8A4B-46B1-E82E693F6867}</ProjectGuid>
+    <ProjectGuid>{99EACE33-81B6-66D3-91E6-30F44F934C0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,23 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Charac2.0.cs" />
-     <Compile Include="Assets\Scripts\DontRemove.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Scripts\ItemAttributes.cs" />
-     <Compile Include="Assets\Scripts\ItemData.cs" />
-     <Compile Include="Assets\Scripts\Items.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Movement1.cs" />
-     <Compile Include="Assets\Scripts\MovingObject.cs" />
-     <Compile Include="Assets\Scripts\NOT IN USE\BaseCharacters.cs" />
-     <Compile Include="Assets\Scripts\NOT IN USE\BaseStat.cs" />
-     <Compile Include="Assets\Scripts\NOT IN USE\Movement.cs" />
-     <Compile Include="Assets\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\SelectCharacter1.cs" />
-     <Compile Include="Assets\Scripts\StatHolder.cs" />
-     <Compile Include="Assets\Scripts\ToolTip.cs" />
-     <Compile Include="Assets\Scripts\UpdateStats.cs" />
+     <Compile Include="Assets\Scripts\NewCharacterSelect.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

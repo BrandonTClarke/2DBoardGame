@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SelectCharacter1 : MonoBehaviour {
+	public Transform character0;
+	public Transform character1;
+	public Transform character2;
 
 	public Button button1;
 	public Button button2;
