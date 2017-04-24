@@ -11,6 +11,7 @@ public class UpdateStats : MonoBehaviour {
 	public Text defenseStats;
 	public Text speedStats;
 	public Text hpStats;
+	public Text munsStats;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class UpdateStats : MonoBehaviour {
 		attackStats.text = "Attack: " + StatHolder.Attack.ToString ();
 		defenseStats.text = "Defense: " + StatHolder.Defense.ToString ();
 		speedStats.text = "Speed: " + StatHolder.Speed.ToString ();
+		munsStats.text = StatHolder.Muns.ToString ();
 
 	}
 }

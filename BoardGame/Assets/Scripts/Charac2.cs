@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Charac2: MonoBehaviour {
 
 	public List<GameObject> characterList;
 	public int index = 0;
@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour {
 			GameObject _char = Instantiate(c) as GameObject;
 			_char.transform.SetParent(GameObject.Find("CharacterList").transform);
 
-			charactersList.Add(_char);
+			characterList.Add(_char);
 			_char.SetActive (false);
 			characterList [index].SetActive (true);
 		}
@@ -28,7 +28,7 @@ public class NewBehaviourScript : MonoBehaviour {
 		} else {
 			index++;
 		}
-		characterList[index].SetActive
+		//characterList [index].SetActive;
 	}
 
 	public void Previous() {
@@ -38,7 +38,7 @@ public class NewBehaviourScript : MonoBehaviour {
 		} else {
 			index--;
 		}
-		characterList[index].SetActive
+		//characterList [index].SetActive;
 	}
 	void Update() {
 		characterList [index].transform.Rotate(0,0.5f,0);

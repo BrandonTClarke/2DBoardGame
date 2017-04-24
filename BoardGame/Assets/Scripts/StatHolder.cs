@@ -7,6 +7,9 @@ public class StatHolder {
 
 	public static string CharacterClassName { get; set; }
 	//public string CharacterClassDescription { get; set; }
+	public static bool CombatStatus { get; set;}
+	public static int TotalTurns { get; set; }
+	public static int MovesMade { get; set; }
 
 	public static int CurrentHealth{ get; set; }
 	public static int MaxHealth { get; set; }

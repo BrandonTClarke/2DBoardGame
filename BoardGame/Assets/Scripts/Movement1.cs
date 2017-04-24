@@ -7,40 +7,42 @@ class Movement1 : MonoBehaviour
 	Vector3 pos;                                // For movement
 	float speed = 2.0f; 					 // Speed of movement
 	int moveNum = StatHolder.Dice;
-	int movesMade = 0;
 
 	void Start () {
 		pos = transform.position; // Take the initial position
 		Debug.Log(moveNum);
+		StatHolder.CombatStatus = false;
 	}
 
 	void FixedUpdate () {
-		if(Input.GetAxisRaw("Horizontal") < 0 && transform.position == pos && movesMade < moveNum ) {        // Left
+		if(Input.GetAxisRaw("Horizontal") < 0 && transform.position == pos && StatHolder.MovesMade < moveNum && StatHolder.CombatStatus == false ) {        // Left
 			pos += Vector3.left;
-			movesMade++;
-			Debug.Log(movesMade);
+			StatHolder.MovesMade++;
+			//Debug.Log(movesMade);
 		}
-		if(Input.GetAxisRaw("Horizontal") > 0 && transform.position == pos && movesMade < moveNum ) {        // Right
+		if(Input.GetAxisRaw("Horizontal") > 0 && transform.position == pos && StatHolder.MovesMade < moveNum && StatHolder.CombatStatus == false ) {        // Right
 			pos += Vector3.right;
-			movesMade++;
-			Debug.Log(movesMade);
+			StatHolder.MovesMade++;
+			//Debug.Log(movesMade);
 		}
-		if(Input.GetAxisRaw("Vertical") > 0 && transform.position == pos && movesMade < moveNum ) {        // Up
+		if(Input.GetAxisRaw("Vertical") > 0 && transform.position == pos && StatHolder.MovesMade < moveNum && StatHolder.CombatStatus == false ) {        // Up
 			pos += Vector3.up;
-			movesMade++;
-			Debug.Log(movesMade);
+			StatHolder.MovesMade++;
+			//Debug.Log(movesMade);
 		}
-		if(Input.GetAxisRaw("Vertical") < 0 && transform.position == pos && movesMade < moveNum ) {        // Down
+		if(Input.GetAxisRaw("Vertical") < 0 && transform.position == pos && StatHolder.MovesMade < moveNum && StatHolder.CombatStatus == false ) {        // Down
 			pos += Vector3.down;
-			movesMade++;
-			Debug.Log(movesMade);
+			StatHolder.MovesMade++;
+			//Debug.Log(movesMade);
 		}
 			transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * speed);  
 	}
 
 	public void ResetDice(){
-		movesMade = 0;
-		Debug.Log (moveNum);
+		StatHolder.MovesMade = 0;
+		StatHolder.TotalTurns++;
+		Debug.Log ("total turns are: " + StatHolder.TotalTurns);
+		//Debug.Log (moveNum);
 	}
 
 	/* public float speed = 5.0f; // player speed
