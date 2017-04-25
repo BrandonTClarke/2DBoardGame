@@ -1,0 +1,33 @@
+Project for CIS35 
+
+Brandon Clarke
+Brandontclarke@gmail.com
+
+Simon Daniel Altamirano
+messi10gol@live.com
+
+Tasks:
+Item System
+//Characters (stats) 
+Characters (Items)
+Enemys (stats)
+Movement (Rigid)
+Enemy (movement)
+UI (Includes Inventory)
+//Options on spaces (Search, Fight)
+Combat (turnbased)
+GameBoard
+Shops
+Inns
+Events
+Doors and Keys
+//turn counter
+//Start Screen
+//Character select
+Map select
+End screen
+
+
+Bonus Plans:
+Multiplayer
+Multiple Maps
