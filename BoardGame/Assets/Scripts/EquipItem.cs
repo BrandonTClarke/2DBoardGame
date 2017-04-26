@@ -1,15 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class EquipItem : MonoBehaviour {
+public class EquipItem : MonoBehaviour{
 
 	public GameObject weaponSlot;
 	public GameObject armorSlot;
 	public GameObject accessorySlot;
-
-	public string pathOfItemToEquip1;
-	public string pathOfItemToEquip2;
 
 	GameObject itemToAdd; 
 
@@ -25,6 +23,11 @@ public class EquipItem : MonoBehaviour {
 
 	}
 
+	public void closePanel(){
+		Destroy (ItemOptions.options);
+		Destroy (ItemOptions.option1);
+		Destroy (ItemOptions.option2);
+	}
 
 	// Use this for initialization
 	void Start () {

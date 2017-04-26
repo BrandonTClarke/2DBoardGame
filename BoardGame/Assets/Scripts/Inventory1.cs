@@ -71,4 +71,8 @@ public class Inventory1 : MonoBehaviour {
 		return false;
 	}
 
+	void FixedUpdate(){
+
+	}
+
 }

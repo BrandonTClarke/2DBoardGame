@@ -25,6 +25,7 @@ public class SearchItem : MonoBehaviour {
 	GameObject Item9;
 
 	public int itemSearchRNG;
+	public string ItemToGet;
 
 	public void SearchSquare(){
 
@@ -32,10 +33,10 @@ public class SearchItem : MonoBehaviour {
 			GameObject Item1 = Instantiate (Resources.Load("Wooden Bow"), slotPanel1.transform) as GameObject;
 		}
 		else if (slotPanel2.transform.childCount < 1) {
-			GameObject Item2 = Instantiate (Resources.Load("Wooden Bow"), slotPanel2.transform) as GameObject;
+			GameObject Item2 = Instantiate (Resources.Load("Wooden Dagger"), slotPanel2.transform) as GameObject;
 		}
 		else if (slotPanel3.transform.childCount < 1) {
-			GameObject Item3 = Instantiate (Resources.Load("Wooden Bow"), slotPanel3.transform) as GameObject;
+			GameObject Item3 = Instantiate (Resources.Load("Wooden Sword"), slotPanel3.transform) as GameObject;
 		}
 		else if (slotPanel4.transform.childCount < 1) {
 			GameObject Item4 = Instantiate (Resources.Load("Wooden Bow"), slotPanel4.transform) as GameObject;

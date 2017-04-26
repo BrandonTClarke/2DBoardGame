@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 222129411918690682}
   - component: {fileID: 114199958999542522}
   - component: {fileID: 114718302512618840}
+  - component: {fileID: 225899782179916566}
+  - component: {fileID: 114241244614016298}
   m_Layer: 5
   m_Name: Wooden Bow
   m_TagString: Untagged
@@ -56,6 +58,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114241244614016298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1524756101673198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0d4267bff57d145a533b993bd148d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatsUIOffsetY: 60
+  StatsUIOffsetX: 60
 --- !u!114 &114718302512618840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,6 +88,7 @@ MonoBehaviour:
   Attack: 1
   Defense: 1
   Speed: 0
+  itemType: 0
 --- !u!222 &222129411918690682
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -97,3 +113,14 @@ RectTransform:
   m_AnchoredPosition: {x: 91.00003, y: -183}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225899782179916566
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1524756101673198}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

@@ -10,6 +10,8 @@ public class ItemAttributes : MonoBehaviour {
 	public int Defense;
 	public int Speed;
 
+	public ItemType itemType;
+
 	public void cloneAttributes(ItemAttributes attributes){
 		MaxHealth = attributes.MaxHealth;
 		Muns = attributes.Muns;
