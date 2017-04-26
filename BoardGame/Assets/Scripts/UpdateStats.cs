@@ -23,6 +23,9 @@ public class UpdateStats : MonoBehaviour {
 	}
 		
 	public void UpdateStatsUI(){
+
+
+
 		textType.text = StatHolder.CharacterClassName;
 		hpStats.text = StatHolder.CurrentHealth.ToString () + " / " + StatHolder.MaxHealth.ToString ();
 		diceStats.text = "Dice: " + StatHolder.Dice.ToString ();

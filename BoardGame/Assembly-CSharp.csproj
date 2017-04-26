@@ -48,16 +48,20 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Charac2.cs" />
      <Compile Include="Assets\Scripts\DontRemove.cs" />
-     <Compile Include="Assets\Scripts\Inventory.cs" />
+     <Compile Include="Assets\Scripts\DragDrop.cs" />
+     <Compile Include="Assets\Scripts\EquipItem.cs" />
+     <Compile Include="Assets\Scripts\Inventory1.cs" />
      <Compile Include="Assets\Scripts\ItemAttributes.cs" />
-     <Compile Include="Assets\Scripts\ItemData.cs" />
-     <Compile Include="Assets\Scripts\Items.cs" />
+     <Compile Include="Assets\Scripts\ItemType.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Movement1.cs" />
-     <Compile Include="Assets\Scripts\MovingObject.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\BaseCharacters.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\BaseStat.cs" />
+     <Compile Include="Assets\Scripts\NOT IN USE\Inventory.cs" />
+     <Compile Include="Assets\Scripts\NOT IN USE\ItemData.cs" />
+     <Compile Include="Assets\Scripts\NOT IN USE\Items.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\Movement.cs" />
+     <Compile Include="Assets\Scripts\NOT IN USE\MovingObject.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\SearchItem.cs" />
      <Compile Include="Assets\Scripts\SelectCharacter1.cs" />
@@ -83,7 +87,19 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>D:/Files/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
+ <HintPath>E:/Files/Projects/CIS35/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

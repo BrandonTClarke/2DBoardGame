@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114199958999542522}
   - component: {fileID: 114718302512618840}
   m_Layer: 5
-  m_Name: Wooden Sword
+  m_Name: Wooden Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ca65391febe44c844a92e38cb4e8bf2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f513eba6755ab4990caf1aacdaeced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 1
+  MaxHealth: 0
   Muns: 10
   Dice: 0
-  Attack: 0
+  Attack: 1
   Defense: 1
   Speed: 0
 --- !u!222 &222129411918690682
