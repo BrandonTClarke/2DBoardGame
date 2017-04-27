@@ -14,7 +14,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Background Image
   - 
   - 
   - 
@@ -56,4 +56,10 @@ TagManager:
     locked: 0
   - name: GUI
     uniqueID: 631843063
+    locked: 0
+  - name: Terrain
+    uniqueID: 2420881017
+    locked: 0
+  - name: Background image
+    uniqueID: 1947057385
     locked: 0

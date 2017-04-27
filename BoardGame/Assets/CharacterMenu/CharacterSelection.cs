@@ -10,7 +10,7 @@ public class Charac2: MonoBehaviour {
 	void Start () {
 		GameObject[] characters = Resources.LoadAll<GameObject> ("Prefab");
 		foreach (GameObject c in characters){
-			 
+
 			GameObject _char = Instantiate(c) as GameObject;
 			_char.transform.SetParent(GameObject.Find("CharacterList").transform);
 
@@ -20,7 +20,7 @@ public class Charac2: MonoBehaviour {
 		}
 
 	}
-	
+
 	public void Next() {
 		characterList [index].SetActive(false);
 		if(index == characterList.Count - 1){
