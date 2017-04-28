@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CharacterMenu\CharacterSelection.cs" />
      <Compile Include="Assets\CharacterSelection.cs" />
      <Compile Include="Assets\Scripts\CharacterSelection.cs" />
      <Compile Include="Assets\Scripts\DontRemove.cs" />
