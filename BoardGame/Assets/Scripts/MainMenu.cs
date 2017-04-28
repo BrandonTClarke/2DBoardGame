@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void BeginGame() { //Play game BC enter scene
-		SceneManager.LoadScene ("Character Select");
+		SceneManager.LoadScene ("NewCharacterSelect");
 	}
 
 	public void ExitGame(){ 

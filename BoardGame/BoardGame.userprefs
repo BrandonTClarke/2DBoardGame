@@ -1,13 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ItemOptions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CharacterSelection.cs">
     <Files>
-      <File FileName="Assets\Scripts\Inventory1.cs" Line="22" Column="14" />
-      <File FileName="Assets\Scripts\SearchItem.cs" Line="51" Column="1" />
-      <File FileName="Assets\Scripts\EquipItem.cs" Line="29" Column="9" />
-      <File FileName="Assets\Scripts\ItemOptions.cs" Line="12" Column="16" />
-      <File FileName="Assets\Scripts\ItemAttributes.cs" Line="13" Column="13" />
-      <File FileName="Assets\Scripts\ItemType.cs" Line="9" Column="9" />
+      <File FileName="Assets\Scripts\Inventory1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SearchItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EquipItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ItemOptions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ItemAttributes.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ItemType.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SelectCharacter1.cs" Line="14" Column="24" />
+      <File FileName="Assets\CharacterSelection.cs" Line="46" Column="41" />
+      <File FileName="Assets\Scripts\MainMenu.cs" Line="33" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
