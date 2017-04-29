@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Main MenuScene.unity
+- path: Assets/Scenes/NewCharacterSelect.unity
   isLoaded: 1
   isActive: 1
