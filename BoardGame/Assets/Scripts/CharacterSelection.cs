@@ -70,6 +70,7 @@ public class CharacterSelection : MonoBehaviour {
 		StatHolder.Defense = 2;
 		StatHolder.Speed = 3;
 		StatHolder.Muns = 20;
+
 		SceneManager.LoadScene ("Board1");
 	}
 

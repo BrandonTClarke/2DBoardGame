@@ -17,37 +17,41 @@ public class SearchItem : MonoBehaviour {
 	public int itemSearchRNG;
 	public string ItemToGet;
 
-	public static List<GameObject> itemsInInventory = new List<GameObject>();
+	public GameObject itemsInInventory;
 
+	private ItemDB itemForInventory;
 
 	public void SearchSquare(){
 
 		if (slotPanel1.transform.childCount < 1) {
-			//itemsInInventory.Add (Instantiate (ItemDB.itemsList));
+			itemForInventory.randomItemForInventory();
+			GameObject itemsInInventory = Instantiate (Resources.Load(ItemDB.ItemList[ItemDB.itemNum]), slotPanel1.transform);
+
+
 		}
 		else if (slotPanel2.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Dagger"), slotPanel2.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Dagger"), slotPanel2.transform) as GameObject;
 		}
 		else if (slotPanel3.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Sword"), slotPanel3.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Sword"), slotPanel3.transform) as GameObject;
 		}
 		else if (slotPanel4.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel4.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel4.transform) as GameObject;
 		}
 		else if (slotPanel5.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel5.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel5.transform) as GameObject;
 		}
 		else if (slotPanel6.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel6.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel6.transform) as GameObject;
 		}
 		else if (slotPanel7.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel7.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel7.transform) as GameObject;
 		}
 		else if (slotPanel8.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel8.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel8.transform) as GameObject;
 		}
 		else if (slotPanel9.transform.childCount < 1) {
-			GameObject Items = Instantiate (Resources.Load("Wooden Bow"), slotPanel9.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel9.transform) as GameObject;
 		}
 
 		StatHolder.MovesMade = 0;
@@ -58,6 +62,10 @@ public class SearchItem : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		itemForInventory = new ItemDB ();
+		ItemDB.ItemList.Add(GameObject.FindGameObjectWithTag ("Item"));
+		//Items = 0;
 	}
 	
 	// Update is called once per frame

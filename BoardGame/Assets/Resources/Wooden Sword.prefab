@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114723640328373748}
   m_Layer: 5
   m_Name: Wooden Sword
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
