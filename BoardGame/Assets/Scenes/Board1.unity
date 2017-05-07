@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18495348, g: 0.30152172, b: 0.36471823, a: 1}
+  m_IndirectSpecularColor: {r: 0.18495345, g: 0.30152172, b: 0.3647182, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -35663,6 +35663,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fac1e1a4a0a994caa9a6dd9b348f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotPanel1: {fileID: 1438496905}
+  slotPanel2: {fileID: 278535913}
+  slotPanel3: {fileID: 1879133}
+  slotPanel4: {fileID: 1797671854}
+  slotPanel5: {fileID: 1519644213}
+  slotPanel6: {fileID: 628534275}
+  slotPanel7: {fileID: 688409404}
+  slotPanel8: {fileID: 211268195}
+  slotPanel9: {fileID: 947452996}
+  itemSearchRNG: 0
+  ItemToGet: 
+  itemsInInventory: {fileID: 0}
 --- !u!1 &1290862265
 GameObject:
   m_ObjectHideFlags: 0

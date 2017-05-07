@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SearchItem : MonoBehaviour {
 
-	/*public GameObject slotPanel1;
+	public GameObject slotPanel1;
 	public GameObject slotPanel2;
 	public GameObject slotPanel3;
 	public GameObject slotPanel4;
@@ -24,9 +24,9 @@ public class SearchItem : MonoBehaviour {
 	public void SearchSquare(){
 
 		if (slotPanel1.transform.childCount < 1) {
-			itemForInventory.randomItemForInventory();
-			GameObject itemsInInventory = Instantiate (Resources.Load(ItemDB.ItemList[ItemDB.itemNum]), slotPanel1.transform);
-
+			ItemDB.randomItemForInventory();
+			GameObject itemsInInventory = Instantiate(Resources.Load("Bag Of Coins"), slotPanel1.transform) as GameObject;
+			Debug.Log("itemnum is...." + ItemDB.itemNum);
 
 		}
 		else if (slotPanel2.transform.childCount < 1) {
@@ -63,18 +63,18 @@ public class SearchItem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		itemForInventory = new ItemDB ();
-		ItemDB.ItemList.Add(GameObject.FindGameObjectWithTag ("Item"));
+		//itemForInventory = new ItemDB ();
+		//ItemDB.ItemList.Add 
 		//Items = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-	}*/
+	}
 
 
-	/*///////////////////////////////////////
+	/*
 	using System.Collections;
 	using UnityEngine.SceneManagement;
 	using System.Collections.Generic;

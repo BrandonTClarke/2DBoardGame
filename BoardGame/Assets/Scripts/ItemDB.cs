@@ -10,9 +10,9 @@ public class ItemDB {
 	public static int itemNum;
 	public static GameObject newItem;
 
-	public void randomItemForInventory(){
+	public static void randomItemForInventory(){
 		ItemDB.itemNum = Random.Range (0, ItemList.Count - 1);
-		//ItemDB.newItem = new GameObject (ItemList [itemNum]);
+		//ItemDB.newItem = new GameObject (ItemDB.ItemList [ItemDB.itemNum]) as GameObject;
 
 		/*
 		ItemNum = Random.Range (0, Items.Length);
