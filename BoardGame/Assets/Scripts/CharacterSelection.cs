@@ -11,10 +11,7 @@ public class CharacterSelection : MonoBehaviour {
 
 	public List<GameObject> characterList;
 	public int index = 0;
-	/// <summary>
 
-	public List<GameObject> characterMenu;
-	public int indexM = 0;
 
 	void Start () {
 		GameObject[] characters = Resources.LoadAll<GameObject> ("Prefab");
@@ -26,19 +23,8 @@ public class CharacterSelection : MonoBehaviour {
 			characterList.Add(_char);
 			_char.SetActive (false);
 			characterList [index].SetActive (true);
-			////////////////////////////
-			GameObject[] charactersM = Resources.LoadAll<GameObject> ("PrefabM");
-			foreach (GameObject m in charactersM){
 
-				GameObject _charM = Instantiate(m) as GameObject;
-				_charM.transform.SetParent(GameObject.Find("CharacterMenu").transform);
-
-				characterMenu.Add(_charM);
-				_charM.SetActive (false);
-				characterMenu [indexM].SetActive (true);
-		}
-
-	}
+	   }
 	}
 
      public void Next() {
@@ -52,16 +38,7 @@ public class CharacterSelection : MonoBehaviour {
 		
 		characterList [index].SetActive (true);
 	}
-		///
-		public void Next2() {
-			characterMenu [indexM].SetActive(false);
-			if(indexM == characterMenu.Count - 1){
-				indexM = 0;
-			} else {
-				indexM++;
-			}
-			characterMenu [indexM].SetActive (true);
-		}
+		
 
 	public void Previous() {
 		characterList [index].SetActive(false);
@@ -74,22 +51,10 @@ public class CharacterSelection : MonoBehaviour {
 	
 		characterList [index].SetActive (true);
 	} 
-		////
-		public void Previous2() {
-			characterMenu [indexM].SetActive(false);
-
-			if(indexM == 0){
-				indexM = characterMenu.Count-1;
-			} else {
-				indexM--;
-			}
-
-			characterMenu [indexM].SetActive (true);
-		}
 
 	void Update() {
 		 characterList [index].transform.Rotate(0,0.5f,0);
-			characterMenu [index].transform.Rotate(0,0,0);
+
 	}
 
 	public void SetDefaultStatsForWarrior(){
