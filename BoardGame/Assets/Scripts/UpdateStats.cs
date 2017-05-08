@@ -33,11 +33,20 @@ public class UpdateStats : MonoBehaviour {
 		munsStats.text = StatHolder.Muns.ToString ();
 	}
 
+	// Equip function
 	public static void UpdateWeaponStats(){
 		StatHolder.MaxHealth = StatHolder.MaxHealth + StatHolder.weaponHP;
 		StatHolder.Attack = StatHolder.Attack + StatHolder.weaponAttack;
 		StatHolder.Defense = StatHolder.Defense + StatHolder.weaponDefense;
 		StatHolder.Speed = StatHolder.Speed + StatHolder.weaponSpeed;
+	}
+
+	// Unequip function
+	public static void UpdateWeaponStats2(){
+		StatHolder.MaxHealth = StatHolder.MaxHealth - StatHolder.weaponHP;
+		StatHolder.Attack = StatHolder.Attack - StatHolder.weaponAttack;
+		StatHolder.Defense = StatHolder.Defense - StatHolder.weaponDefense;
+		StatHolder.Speed = StatHolder.Speed - StatHolder.weaponSpeed;
 	}
 
 }

@@ -49,6 +49,7 @@
      <Compile Include="Assets\CharacterMenu\CharacterSelection.cs" />
      <Compile Include="Assets\DragonBoar\Scripts\playerControlDB.cs" />
      <Compile Include="Assets\Scripts\CharacterSelection.cs" />
+     <Compile Include="Assets\Scripts\Combat.cs" />
      <Compile Include="Assets\Scripts\DontRemove.cs" />
      <Compile Include="Assets\Scripts\EquipItem.cs" />
      <Compile Include="Assets\Scripts\Inventory1.cs" />
@@ -92,19 +93,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>E:/Files/Projects/CIS35/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Common">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ <HintPath>D:/Files/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

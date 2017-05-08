@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/NewCharacterSelect.unity
   - enabled: 1
+    path: Assets/Scenes/Main MenuScene.unity
+  - enabled: 1
     path: Assets/Scenes/NewCharacterSelect.unity
   - enabled: 1
     path: Assets/Scenes/Board1.unity
   - enabled: 0
     path: Assets/Main MenuScene.unity
-  - enabled: 1
-    path: Assets/Scenes/Main MenuScene.unity

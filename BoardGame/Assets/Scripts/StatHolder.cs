@@ -21,6 +21,10 @@ public class StatHolder {
 	public static int Defense {get; set;}
 	public static int Speed {get; set;}
 
+	public static bool isWeaponEquip;
+	public static bool isArmorEquip;
+	public static bool isAccessoryEquip;
+
 	public static int weaponHP;
 	public static int weaponAttack;
 	public static int weaponDefense;

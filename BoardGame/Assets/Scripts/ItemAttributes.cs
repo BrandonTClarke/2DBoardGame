@@ -25,7 +25,7 @@ public class ItemAttributes : MonoBehaviour, IPointerEnterHandler {
 	}
 
 	public void OnPointerEnter(PointerEventData eventData){
-		Debug.Log ("MOUSE OVER");
+		//Debug.Log ("MOUSE OVER");
 		ItemOptions.thisItem = this.gameObject;
 		ItemOptions.itemOptionsPopUP ();
 	}

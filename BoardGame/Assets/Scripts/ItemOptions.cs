@@ -12,6 +12,9 @@ public class ItemOptions: MonoBehaviour {
 	public static GameObject option3;
 	public static GameObject option12;
 	public static GameObject option13;
+	public static GameObject option14;
+	public static GameObject option15;
+	public static GameObject option16;
 
 	public static GameObject thisItem;
 
@@ -25,13 +28,13 @@ public class ItemOptions: MonoBehaviour {
 			option3.SetActive (true);
 			options.transform.position = new Vector3 (Input.mousePosition.x, Input.mousePosition.y);
 
-			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Weapon) {
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Weapon && StatHolder.isWeaponEquip == false) {
 				option1.SetActive (true);
 			}
-			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Armor) {
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Armor && StatHolder.isArmorEquip == false ) {
 				option12.SetActive (true);
 			}
-			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Accessory) {
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Accessory && StatHolder.isAccessoryEquip == false) {
 				option13.SetActive (true);
 			}
 		}
@@ -54,6 +57,10 @@ public class ItemOptions: MonoBehaviour {
 		*/
 	}
 
+	public void closePanel1(){
+		ItemOptions.closePanel ();
+	}
+
 	public static void closePanel(){
 		options.SetActive (false);
 		option1.SetActive (false);
@@ -61,6 +68,7 @@ public class ItemOptions: MonoBehaviour {
 		option13.SetActive (false);
 		option2.SetActive (false);
 		option3.SetActive (false);
+
 	}
 
 	// Use this for initialization
@@ -70,12 +78,18 @@ public class ItemOptions: MonoBehaviour {
 		option1 = GameObject.Find ("Option Button Equip Weapon");
 		option12 = GameObject.Find ("Option Button Equip Armor");
 		option13 = GameObject.Find ("Option Button Equip Accessory");
+		option14 = GameObject.Find ("Option Button Unequip Weapon");
+		option15 = GameObject.Find ("Option Button Unequip Armor");
+		option16 = GameObject.Find ("Option Button Unequip Accessory");
 		option2 = GameObject.Find ("Option Button Info");
 		option3 = GameObject.Find ("Option Button Close");
 		options.SetActive (false);
 		option1.SetActive (false);
 		option12.SetActive (false);
 		option13.SetActive (false);
+		option14.SetActive (false);
+		option15.SetActive (false);
+		option16.SetActive (false);
 		option2.SetActive (false);
 		option3.SetActive (false);
 	}
