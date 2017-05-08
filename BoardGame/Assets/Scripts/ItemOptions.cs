@@ -3,18 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ItemOptions: MonoBehaviour, IPointerEnterHandler {
+public class ItemOptions: MonoBehaviour {
 
 	GameObject inventoryPanel;
-	GameObject thisItem;
 	public static GameObject options;
 	public static GameObject option1;
 	public static GameObject option2;
+	public static GameObject option3;
+	public static GameObject option12;
+	public static GameObject option13;
+
+	public static GameObject thisItem;
 
 	public float StatsUIOffsetY = 60;
 	public float StatsUIOffsetX = 60;
 
-	public void OnPointerEnter(PointerEventData eventData){
+	public static void itemOptionsPopUP(){
+		if (options.activeInHierarchy == false) {
+			options.SetActive (true);
+			option2.SetActive (true);
+			option3.SetActive (true);
+			options.transform.position = new Vector3 (Input.mousePosition.x, Input.mousePosition.y);
+
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Weapon) {
+				option1.SetActive (true);
+			}
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Armor) {
+				option12.SetActive (true);
+			}
+			if (ItemOptions.thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Accessory) {
+				option13.SetActive (true);
+			}
+		}
+
+
+		/*
 		if (inventoryPanel.transform.FindChild ("Option Panel(Clone)") == null) {
 			GameObject options = Instantiate (Resources.Load ("Option Panel"), Input.mousePosition, Quaternion.identity, inventoryPanel.transform) as GameObject;
 			if (thisItem.GetComponent<ItemAttributes> ().itemType == ItemType.Weapon) {
@@ -28,14 +51,33 @@ public class ItemOptions: MonoBehaviour, IPointerEnterHandler {
 			}
 			GameObject option2 = Instantiate(Resources.Load("Option Button Close"), options.transform) as GameObject;
 		}
+		*/
+	}
 
-
+	public static void closePanel(){
+		options.SetActive (false);
+		option1.SetActive (false);
+		option12.SetActive (false);
+		option13.SetActive (false);
+		option2.SetActive (false);
+		option3.SetActive (false);
 	}
 
 	// Use this for initialization
 	void Start () {
 		inventoryPanel = GameObject.Find ("Inventory Panel");
-		thisItem = this.gameObject;
+		options = GameObject.Find ("Option Panel");
+		option1 = GameObject.Find ("Option Button Equip Weapon");
+		option12 = GameObject.Find ("Option Button Equip Armor");
+		option13 = GameObject.Find ("Option Button Equip Accessory");
+		option2 = GameObject.Find ("Option Button Info");
+		option3 = GameObject.Find ("Option Button Close");
+		options.SetActive (false);
+		option1.SetActive (false);
+		option12.SetActive (false);
+		option13.SetActive (false);
+		option2.SetActive (false);
+		option3.SetActive (false);
 	}
 	
 	// Update is called once per frame

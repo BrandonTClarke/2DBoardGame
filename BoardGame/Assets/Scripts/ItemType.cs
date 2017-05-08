@@ -7,5 +7,6 @@ using UnityEngine;
 		Armor,
 		Accessory,
 		Consumable,
-		Sell
+		Sell,
+		CurrentlyEquip
 	}

@@ -31,6 +31,13 @@ public class UpdateStats : MonoBehaviour {
 		defenseStats.text = "Defense: " + StatHolder.Defense.ToString ();
 		speedStats.text = "Speed: " + StatHolder.Speed.ToString ();
 		munsStats.text = StatHolder.Muns.ToString ();
-
 	}
+
+	public static void UpdateWeaponStats(){
+		StatHolder.MaxHealth = StatHolder.MaxHealth + StatHolder.weaponHP;
+		StatHolder.Attack = StatHolder.Attack + StatHolder.weaponAttack;
+		StatHolder.Defense = StatHolder.Defense + StatHolder.weaponDefense;
+		StatHolder.Speed = StatHolder.Speed + StatHolder.weaponSpeed;
+	}
+
 }

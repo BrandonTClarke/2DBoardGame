@@ -22,12 +22,7 @@ public class EquipItem : MonoBehaviour{
 	public void EquipAccessory(){
 
 	}
-
-	public void closePanel(){
-		Destroy (ItemOptions.options);
-		Destroy (ItemOptions.option1);
-		Destroy (ItemOptions.option2);
-	}
+		
 
 	// Use this for initialization
 	void Start () {

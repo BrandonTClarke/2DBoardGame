@@ -163,7 +163,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 43f513eba6755ab4990caf1aacdaeced, type: 3}
+      - m_Target: {fileID: 11500000, guid: 055e8dd93cb439e40931da3cd478ed84, type: 3}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -173,7 +173,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &222124775348057286

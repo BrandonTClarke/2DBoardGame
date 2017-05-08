@@ -50,7 +50,6 @@
      <Compile Include="Assets\DragonBoar\Scripts\playerControlDB.cs" />
      <Compile Include="Assets\Scripts\CharacterSelection.cs" />
      <Compile Include="Assets\Scripts\DontRemove.cs" />
-     <Compile Include="Assets\Scripts\DragDrop.cs" />
      <Compile Include="Assets\Scripts\EquipItem.cs" />
      <Compile Include="Assets\Scripts\Inventory1.cs" />
      <Compile Include="Assets\Scripts\ItemAttributes.cs" />
@@ -61,6 +60,7 @@
      <Compile Include="Assets\Scripts\Movement1.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\BaseCharacters.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\BaseStat.cs" />
+     <Compile Include="Assets\Scripts\NOT IN USE\DragDrop.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\Inventory.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\ItemData.cs" />
      <Compile Include="Assets\Scripts\NOT IN USE\Items.cs" />
@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\SearchItem.cs" />
      <Compile Include="Assets\Scripts\StatHolder.cs" />
      <Compile Include="Assets\Scripts\ToolTip.cs" />
+     <Compile Include="Assets\Scripts\TurnOptions.cs" />
      <Compile Include="Assets\Scripts\UpdateStats.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -91,7 +92,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="LitJson">
- <HintPath>C:/Users/Simon/Desktop/Programming/CIS 35 (Spring 2017)/GameProject/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
+ <HintPath>E:/Files/Projects/CIS35/2DBoardGame/BoardGame/Assets/Scripts/LitJson.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

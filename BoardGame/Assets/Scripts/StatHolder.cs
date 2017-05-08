@@ -21,6 +21,12 @@ public class StatHolder {
 	public static int Defense {get; set;}
 	public static int Speed {get; set;}
 
+	public static int weaponHP;
+	public static int weaponAttack;
+	public static int weaponDefense;
+	public static int weaponSpeed;
+
+
 	/*
 	public static void Player1Stat(string characterClassName,int currenthp, int maxhp, int mun, int dice, int attack, int defense, int speed){
 		this.CharacterClassName = characterClassName;

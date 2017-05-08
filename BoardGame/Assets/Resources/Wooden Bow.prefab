@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114199958999542522}
   - component: {fileID: 114718302512618840}
   - component: {fileID: 225899782179916566}
-  - component: {fileID: 114241244614016298}
   m_Layer: 5
   m_Name: Wooden Bow
   m_TagString: Item
@@ -58,19 +57,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114241244614016298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1524756101673198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0d4267bff57d145a533b993bd148d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StatsUIOffsetY: 60
-  StatsUIOffsetX: 60
 --- !u!114 &114718302512618840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,6 +74,7 @@ MonoBehaviour:
   Attack: 1
   Defense: 1
   Speed: 0
+  Info: This basic bow will boost your attack and defense by 1.
   itemType: 0
 --- !u!222 &222129411918690682
 CanvasRenderer:
