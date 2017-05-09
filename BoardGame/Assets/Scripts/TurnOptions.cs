@@ -83,8 +83,47 @@ public class TurnOptions : MonoBehaviour {
 		StatHolder.weaponDefense = ItemOptions.thisItem.GetComponent<ItemAttributes> ().Defense;
 		StatHolder.weaponSpeed = ItemOptions.thisItem.GetComponent<ItemAttributes> ().Speed;
 		UpdateStats.UpdateWeaponStats ();
+		StatHolder.isWeaponEquip = true;
 		infoBox.SetActive (false);
 		ItemOptions.closePanel ();
+	}
+
+	public void unEquipWeapon(){
+		//unEquipWeaponAllocation ();
+		UpdateStats.UpdateWeaponStats2 ();
+	}
+
+	public void unEquipWeaponAllocation(Transform slotPanel1, Transform slotPanel2, Transform slotPanel3, Transform slotPanel4, Transform slotPanel5, Transform slotPanel6, Transform slotPanel7, Transform slotPanel8, Transform slotPanel9){
+		if (slotPanel1.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel1);
+		} 
+		else if (slotPanel2.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel2);
+		} 
+		else if (slotPanel3.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel3);
+		} 
+		else if (slotPanel4.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel4);
+		} 
+		else if (slotPanel5.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel5);
+		} 
+		else if (slotPanel6.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel6);
+		} 
+		else if (slotPanel7.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel7);
+		} 
+		else if (slotPanel8.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel8);
+		} 
+		else if (slotPanel9.transform.childCount < 1) {
+			ItemOptions.thisItem.transform.SetParent (slotPanel9);
+		} 
+		else {
+			Destroy (ItemOptions.thisItem);
+		}
 	}
 
 	public void equipArmor(Transform armorSlot){
@@ -99,6 +138,9 @@ public class TurnOptions : MonoBehaviour {
 	void Start () {
 		infoBox = GameObject.Find ("Info Box");
 		infoBox.SetActive (false);
+		StatHolder.isWeaponEquip = false;
+		StatHolder.isArmorEquip = false;
+		StatHolder.isAccessoryEquip = false;
 	}
 	
 	// Update is called once per frame
