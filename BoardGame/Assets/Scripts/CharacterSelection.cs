@@ -66,7 +66,7 @@ public class CharacterSelection : MonoBehaviour {
 		StatHolder.Defense = 4;
 		StatHolder.Speed = 2;
 		StatHolder.Muns = 20;
-		characterList [index].SetActive (true);
+	
 		SceneManager.LoadScene ("Board1");
 	}
 
@@ -79,7 +79,7 @@ public class CharacterSelection : MonoBehaviour {
 		StatHolder.Defense = 2;
 		StatHolder.Speed = 3;
 		StatHolder.Muns = 20;
-		characterList [index].SetActive (true);
+		//characterList [index].SetActive (true);
 		SceneManager.LoadScene ("Board1");
 	}
 
@@ -92,7 +92,7 @@ public class CharacterSelection : MonoBehaviour {
 		StatHolder.Defense = 2;
 		StatHolder.Speed = 3;
 		StatHolder.Muns = 20;
-		characterList [index].SetActive (true);
+	//	characterList [index].SetActive (true);
 		SceneManager.LoadScene ("Board1");
 	}
 }
