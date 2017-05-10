@@ -31,6 +31,10 @@ public class UpdateStats : MonoBehaviour {
 		defenseStats.text = "Defense: " + StatHolder.Defense.ToString ();
 		speedStats.text = "Speed: " + StatHolder.Speed.ToString ();
 		munsStats.text = StatHolder.Muns.ToString ();
+
+		if (StatHolder.CurrentHealth <= 0) {
+			Application.Quit ();
+		}
 	}
 
 	// Equip function

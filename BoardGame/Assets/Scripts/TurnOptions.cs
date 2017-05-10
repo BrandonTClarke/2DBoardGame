@@ -59,7 +59,7 @@ public class TurnOptions : MonoBehaviour {
 			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel8.transform) as GameObject;
 		}
 		else if (slotPanel9.transform.childCount < 1) {
-			GameObject itemsInInventory = Instantiate (Resources.Load("Wooden Bow"), slotPanel9.transform) as GameObject;
+			GameObject itemsInInventory = Instantiate (Resources.Load("OP Stick"), slotPanel9.transform) as GameObject;
 		}
 
 		StatHolder.MovesMade = 0;
